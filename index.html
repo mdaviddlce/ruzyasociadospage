@@ -5,177 +5,307 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINA WEB MARCOS</title>
-    <link rel="shortcut icon" href="img/laptop.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>RUZ Y ASOCIADOS</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende CSS desde cero">
+    <meta name="description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexcgdesign.github.io">
+    <meta property="og:title" content="Aprende CSS desde cero">
+    <meta property="og:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.jordanalex.com/">
+    <meta property="twitter:title" content="Aprende CSS desde cero">
+    <meta property="twitter:description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+    <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg">
 </head>
-<!---->
+
 <body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Contacto</a>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img src="./images/logo-corporativo-chico.png" alt="">
+                </a>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./contacto.html" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./servicios.html" class="nav__links">Servicios</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
         </nav>
-        <sectios class="textos-header">
-            <h1>Marcos David de la Cruz Esquivel</h1>
-            <h2>Ing. En Sistemas Computacionales</h2>
-        </sectios>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 351.77,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">RUZ Y ASOCIADOS</h1>
+            <p class="hero__paragraph">Despacho contable y fiscal, expertos en servicios contables</p>
+            <a href="tel:8000010789" class="cta">¡Contactanos!</a>
+        </section>
     </header>
+
     <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">SOBRE MI</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion.png" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Quien Soy</h3>
-                    <p>
-                        Estudiante de Sistemas Computacionales, con deseo de 
-                        aprender y adentrarse en el campo laboral que ofrece la 
-                        carrera. Con capacidad de aprendizaje rápido, trabajo en 
-                        equipo, organización y compromiso con labores 
-                        encomendadas 
+        <section class="container about">
+            <h2 class="subtitle">¿Quienes somos?</h2>
+            <p class="about__paragraph">Somos una empresa que atiende a mas de 100 clientes de diversos giros tanto nacional 
+                como en el extranjero. Nuestros servicios se basan en brindar soluciones corporativas y empresariales para el 
+                momento de crecimiento de tu empresa. Atendemos desde microempresas hasta corporativos internacionales. Nuestros 
+                servicios van de acuerdo a las necesidades de cada uno de nuestros clientes, nuestros asesores están capacitados
+                 para buscar el beneficio de su empresa. </p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/vision.svg" class="about__icon">
+                    <h3 class="about__title">Visión</h3>
+                    <p class="about__paragrah">Ser reconocidos internacionalmente por el nivel de satisfacción de 
+                        nuestros clientes en las distintas áreas de servicios que se ofrecen. </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/mission.svg" class="about__icon">
+                    <h3 class="about__title">Misión</h3>
+                    <p class="about__paragrah">Comprometidos a encontrar las mejores soluciones financieras, 
+                        contables y legales para pequeñas, medianas y grandes empresas así como crear estrategias 
+                        para el crecimiento y éxito de nuestros clientes. </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/value.svg" class="about__icon">
+                    <h3 class="about__title">Valores</h3>
+                    <p>Confidencialidad <br>
+                    Honestidad <br>
+                    Lealtad <br>
+                    Responsabilidad <br>
+                    Objetividad</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">¿Qué servicios ofrecemos?</h2>
+                    <p class="knowledge__paragraph">
+                        En Ruz y Asociados, ofrecemos una amplia gama de servicios diseñados para satisfacer 
+                        las necesidades de empresas de todos los tamaños y sectores. Desde consultoría empresarial 
+                        y asesoría legal hasta gestión financiera y desarrollo tecnológico, estamos aquí para 
+                        brindarte soluciones integrales y personalizadas que impulsen el crecimiento y el éxito 
+                        de tu empresa. Contáctanos hoy mismo para comenzar a trabajar juntos hacia tus metas empresariales. 
                     </p>
-                    <h3><span>2</span>A Dónde Quiero Llegar</h3>
-                    <p>Me encantaría llegar legos, ser alguien que deje huella a donde vaya, pero quiero empezar por aprender más sobre
-                        la vida laboral, cómo es que funciona el mundo fuera de las aulas. Aun no tengo bien definido en qué me quiero enfocar,
-                        el desarrollo me gusta, la ciberseguridad un poco y el análisis de datos se me hace muy interesante. Lo que sea que 
-                        decida hacer, lo haré con mi máximo esfuerzo. 
-                    </p>
+                    <a href="./servicios.html" class="cta">Saber más...</a>
                 </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/css.jpg" class="knowledge__img">
+                </figure>
             </div>
         </section>
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Materias</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/img1.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Bases De Programación</p>
-                        </div>
+
+        <section class="testimony">
+            <h2 class="subtitle">UNETE A NUETROS MUCHOS <br> <span class="testimony__course">CLIENTES SATISFECHOS!</span></h2>
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Jordan Alexander, <span class="testimony__course"> Gerente Regional
+                                de ...</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
+                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
-                    <div class="imagen-port">
-                        <img src="img/img2.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Programación I</p>
-                        </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Alejandra Perez, <span class="testimony__course">Directora de
+                                ...</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                            voluptatum!</p>
                     </div>
-                    <div class="imagen-port">
-                        <img src="img/img3.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Programación II</p>
-                        </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">Director Ejecutivo de
+                                ...</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
-                    <div class="imagen-port">
-                        <img src="img/img4.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Programación III</p>
-                        </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Kevin Ramirez, <span class="testimony__course">Gerente de
+                                ...</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
-                    <div class="imagen-port">
-                        <img src="img/img5.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Programación Web</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img6.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Tecnologias Web</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img7.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Bases De Datos</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img8.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/puntero.png" alt="">
-                            <p>Electrónica</p>
-                        </div>
-                    </div>
-                </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face4.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
-        <section class="clentes contenedor">
-            <div class="cards">
-                <div class="card">
-                    <img src="img/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <p>“We are here to put a dent in the universe. Otherwise why else even be here?”</p>
-                        <h4>— Steve Jobs</h4>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+                doloribus neque perspiciatis sapiente fuga.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué servicios se ofrecen en Ruz y Asociados?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">
+                            Ofrecemos una amplia gama de servicios diseñados para facilitar 
+                            el trabajo y satisfacer las necesidades de empresas de todos los 
+                            tamaños y sectores. Nuestros servicios incluyen: <br>
+                            <br>
+                             - Consultoría Empresarial <br>
+                             - Asesoría Legal y Fiscal <br>
+                             - Gestión Financiera <br>
+                             - Desarrollo Tecnológico <br>
+                             - Capacitación y Desarrollo del Talento <br>
+                            <br>
+                            En Ruz y Asociados, estamos comprometidos a brindarte soluciones 
+                            integrales y personalizadas para impulsar el crecimiento y el éxito 
+                            de tu empresa. ¡Contáctanos hoy mismo para comenzar!
+                        </p>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="img/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <p>“We all need people who will give us feedback. That is how we improve.”</p>
-                        <h4>— Bill Gates</h4>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué aprenderé en este curso?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Cursos y Talleres</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <a href="https://learndigital.withgoogle.com/link/1nur091p2ww"><img src="img/productividadPersonal.png" alt="productividadPersonal" /></a>
-                        <h3>Productividad Personal</h3>
-                        <h4>Área de Empleo e Inclusión Social Fundación Santa María la Real</h4>
-                        <h6>Expedición: sept. 2022</h6> 
-                        <h6>ID de la credencial 859 WQX 9G2</h6>   
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CSS GRID?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
                     </div>
-                    <div class="servicio-ind">
-                        <a href="https://learndigital.withgoogle.com/link/1nur091p2ww"><img src="img/DesarrolloDeAppsMoviles.png" alt="DesarrolloDeAppsMoviles" /></a>
-                        <h3>Desarrollo de Apps Moviles</h3>
-                        <h4>Universidad Complutense de Madrid</h4>
-                        <h6>Expedición: sept. 2022</h6> 
-                        <h6>ID de la credencial JBT 49L W67</h6>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/CloudComputing.png" alt="">
-                        <h3>Cloud Computing</h3>
-                        <h4>Escuela de Organización Industrial</h4>
-                        <h6>Expedición: febr. 2023</h6> 
-                        <h6>ID de la credencial 859 WQX 9G2</h6>
-                    </div>
-                </div>
-            </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estas listo para formar parte de nuestro equipo?</h2>
+                <p class="questions__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+                    architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit
+                    eius atque tempora iure ab non autem.</p>
+                <a href="#" class="cta">Conocenos</a>
+            </section>
         </section>
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <a title="Teléfono" href="4492617123"><img src="img/phone.svg" alt="Teléfono" /></a>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <img src="./images/logo-corporativo.png" alt="">
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./servicios.html" class="nav__links">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/people/Ruz-y-Asociados-SC/100066439762105/" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/ruzyasociados_/" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="https://www.linkedin.com/company/ruz-y-asociados-sc-" class="footer__icons"><img src="./images/linkedin.svg" class="footer__img"></a>
             </div>
-            <div class="content-foo">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmqjSRGwjTTdvxkHXrQScqpKBpsRdWQlksxPxZJvcNfzNjnjlBsbkfQHpvfSSMFcBzh"><img src="img/email.svg" alt="email" /></a>
-            </div>
-            <div class="content-foo">
-                <a href="https://www.linkedin.com/in/mdaviddlce/"><img src="img/linkedin.svg" alt="linkedin" /></a>
-            </div>
-        </div>
-        <h2 class="titulo-final">&copy; Marcos de la Cruz | Ing. En Sistemas</h2>
+
+            <h6 class="footer__copyright">Copyright &copy; 2024 Ruz y Asociados - Todos los derechos reservados.</h6>
+        </section>
     </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
